@@ -1094,6 +1094,127 @@ html {
     margin: 0;
 }
 
+/* Blog post page styles */
+.blog-post-page {
+    padding: 120px 0 80px 0;
+}
+
+.post-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.post-header .post-meta {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+}
+
+.post-header .post-author {
+    color: #64748b;
+    font-size: 0.9rem;
+}
+
+.post-header h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #1e293b;
+    margin: 1rem 0;
+    line-height: 1.2;
+}
+
+.post-header .post-tags {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.post-content-body {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #374151;
+}
+
+.post-content-body p {
+    margin-bottom: 1.5rem;
+}
+
+.post-content-body ul,
+.post-content-body ol {
+    margin: 1.5rem 0;
+    padding-left: 2rem;
+}
+
+.post-content-body li {
+    margin-bottom: 0.5rem;
+}
+
+.post-content-body strong {
+    color: #1e293b;
+    font-weight: 600;
+}
+
+.post-footer {
+    max-width: 800px;
+    margin: 3rem auto 0;
+    padding-top: 2rem;
+    border-top: 1px solid #e2e8f0;
+}
+
+.post-navigation {
+    margin-bottom: 2rem;
+}
+
+.nav-link {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.75rem 1.5rem;
+    background: #f8fafc;
+    color: #2563eb;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    background: #e2e8f0;
+    transform: translateX(-2px);
+}
+
+.post-share h4 {
+    color: #1e293b;
+    margin-bottom: 1rem;
+}
+
+.share-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.share-btn {
+    padding: 0.5rem 1rem;
+    background: #2563eb;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.share-btn:hover {
+    background: #1d4ed8;
+}
+
 /* Additional responsive styles for new pages */
 @media (max-width: 768px) {
     .bio-section,
@@ -1123,5 +1244,23 @@ html {
     .interests-grid,
     .collaboration-grid {
         grid-template-columns: 1fr;
+    }
+    
+    .post-header h1 {
+        font-size: 2.2rem;
+    }
+    
+    .post-header .post-meta {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .post-content-body {
+        font-size: 1rem;
+        padding: 0 1rem;
+    }
+    
+    .share-buttons {
+        flex-direction: column;
     }
 }
